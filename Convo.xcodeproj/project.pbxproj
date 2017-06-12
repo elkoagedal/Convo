@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A13CF6D21EEF1D9E008980AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13CF6D11EEF1D9E008980AD /* AppDelegate.swift */; };
+		A13CF6D41EEF1D9E008980AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13CF6D31EEF1D9E008980AD /* ViewController.swift */; };
+		A13CF6D71EEF1D9E008980AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13CF6D51EEF1D9E008980AD /* Main.storyboard */; };
+		A13CF6D91EEF1D9E008980AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A13CF6D81EEF1D9E008980AD /* Assets.xcassets */; };
+		A13CF6DC1EEF1D9E008980AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13CF6DA1EEF1D9E008980AD /* LaunchScreen.storyboard */; };
+		A13CF6E11EEF1D9F008980AD /* Convo WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A13CF6E01EEF1D9F008980AD /* Convo WatchKit App.app */; };
+		A13CF6E71EEF1D9F008980AD /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13CF6E51EEF1D9F008980AD /* Interface.storyboard */; };
+		A13CF6E91EEF1D9F008980AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A13CF6E81EEF1D9F008980AD /* Assets.xcassets */; };
+		A13CF6F01EEF1D9F008980AD /* Convo WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A13CF6EF1EEF1D9F008980AD /* Convo WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A13CF6F71EEF1D9F008980AD /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13CF6F61EEF1D9F008980AD /* InterfaceController.swift */; };
+		A13CF6F91EEF1D9F008980AD /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13CF6F81EEF1D9F008980AD /* ExtensionDelegate.swift */; };
+		A13CF6FB1EEF1D9F008980AD /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13CF6FA1EEF1D9F008980AD /* NotificationController.swift */; };
+		A13CF6FD1EEF1D9F008980AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A13CF6FC1EEF1D9F008980AD /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A13CF6E21EEF1D9F008980AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A13CF6C61EEF1D9E008980AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A13CF6DF1EEF1D9F008980AD;
+			remoteInfo = "Convo WatchKit App";
+		};
+		A13CF6F11EEF1D9F008980AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A13CF6C61EEF1D9E008980AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A13CF6EE1EEF1D9F008980AD;
+			remoteInfo = "Convo WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A13CF7041EEF1D9F008980AD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A13CF6F01EEF1D9F008980AD /* Convo WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A13CF7081EEF1D9F008980AD /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A13CF6E11EEF1D9F008980AD /* Convo WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A13CF6CE1EEF1D9E008980AD /* Convo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Convo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A13CF6D11EEF1D9E008980AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A13CF6D31EEF1D9E008980AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A13CF6D61EEF1D9E008980AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A13CF6D81EEF1D9E008980AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A13CF6DB1EEF1D9E008980AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A13CF6DD1EEF1D9E008980AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A13CF6E01EEF1D9F008980AD /* Convo WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Convo WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A13CF6E61EEF1D9F008980AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A13CF6E81EEF1D9F008980AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A13CF6EA1EEF1D9F008980AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A13CF6EF1EEF1D9F008980AD /* Convo WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Convo WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A13CF6F51EEF1D9F008980AD /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		A13CF6F61EEF1D9F008980AD /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A13CF6F81EEF1D9F008980AD /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A13CF6FA1EEF1D9F008980AD /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		A13CF6FC1EEF1D9F008980AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A13CF6FE1EEF1D9F008980AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A13CF6CB1EEF1D9E008980AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A13CF6EC1EEF1D9F008980AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A13CF6C51EEF1D9E008980AD = {
+			isa = PBXGroup;
+			children = (
+				A13CF6D01EEF1D9E008980AD /* Convo */,
+				A13CF6E41EEF1D9F008980AD /* Convo WatchKit App */,
+				A13CF6F31EEF1D9F008980AD /* Convo WatchKit Extension */,
+				A13CF6CF1EEF1D9E008980AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A13CF6CF1EEF1D9E008980AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A13CF6CE1EEF1D9E008980AD /* Convo.app */,
+				A13CF6E01EEF1D9F008980AD /* Convo WatchKit App.app */,
+				A13CF6EF1EEF1D9F008980AD /* Convo WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A13CF6D01EEF1D9E008980AD /* Convo */ = {
+			isa = PBXGroup;
+			children = (
+				A13CF6D11EEF1D9E008980AD /* AppDelegate.swift */,
+				A13CF6D31EEF1D9E008980AD /* ViewController.swift */,
+				A13CF6D51EEF1D9E008980AD /* Main.storyboard */,
+				A13CF6D81EEF1D9E008980AD /* Assets.xcassets */,
+				A13CF6DA1EEF1D9E008980AD /* LaunchScreen.storyboard */,
+				A13CF6DD1EEF1D9E008980AD /* Info.plist */,
+			);
+			path = Convo;
+			sourceTree = "<group>";
+		};
+		A13CF6E41EEF1D9F008980AD /* Convo WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A13CF6E51EEF1D9F008980AD /* Interface.storyboard */,
+				A13CF6E81EEF1D9F008980AD /* Assets.xcassets */,
+				A13CF6EA1EEF1D9F008980AD /* Info.plist */,
+			);
+			path = "Convo WatchKit App";
+			sourceTree = "<group>";
+		};
+		A13CF6F31EEF1D9F008980AD /* Convo WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A13CF6F61EEF1D9F008980AD /* InterfaceController.swift */,
+				A13CF6F81EEF1D9F008980AD /* ExtensionDelegate.swift */,
+				A13CF6FA1EEF1D9F008980AD /* NotificationController.swift */,
+				A13CF6FC1EEF1D9F008980AD /* Assets.xcassets */,
+				A13CF6FE1EEF1D9F008980AD /* Info.plist */,
+				A13CF6F41EEF1D9F008980AD /* Supporting Files */,
+			);
+			path = "Convo WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		A13CF6F41EEF1D9F008980AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A13CF6F51EEF1D9F008980AD /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A13CF6CD1EEF1D9E008980AD /* Convo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A13CF7091EEF1D9F008980AD /* Build configuration list for PBXNativeTarget "Convo" */;
+			buildPhases = (
+				A13CF6CA1EEF1D9E008980AD /* Sources */,
+				A13CF6CB1EEF1D9E008980AD /* Frameworks */,
+				A13CF6CC1EEF1D9E008980AD /* Resources */,
+				A13CF7081EEF1D9F008980AD /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A13CF6E31EEF1D9F008980AD /* PBXTargetDependency */,
+			);
+			name = Convo;
+			productName = Convo;
+			productReference = A13CF6CE1EEF1D9E008980AD /* Convo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A13CF6DF1EEF1D9F008980AD /* Convo WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A13CF7051EEF1D9F008980AD /* Build configuration list for PBXNativeTarget "Convo WatchKit App" */;
+			buildPhases = (
+				A13CF6DE1EEF1D9F008980AD /* Resources */,
+				A13CF7041EEF1D9F008980AD /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A13CF6F21EEF1D9F008980AD /* PBXTargetDependency */,
+			);
+			name = "Convo WatchKit App";
+			productName = "Convo WatchKit App";
+			productReference = A13CF6E01EEF1D9F008980AD /* Convo WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A13CF6EE1EEF1D9F008980AD /* Convo WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A13CF7011EEF1D9F008980AD /* Build configuration list for PBXNativeTarget "Convo WatchKit Extension" */;
+			buildPhases = (
+				A13CF6EB1EEF1D9F008980AD /* Sources */,
+				A13CF6EC1EEF1D9F008980AD /* Frameworks */,
+				A13CF6ED1EEF1D9F008980AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Convo WatchKit Extension";
+			productName = "Convo WatchKit Extension";
+			productReference = A13CF6EF1EEF1D9F008980AD /* Convo WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A13CF6C61EEF1D9E008980AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Emily Koagedal";
+				TargetAttributes = {
+					A13CF6CD1EEF1D9E008980AD = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					A13CF6DF1EEF1D9F008980AD = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					A13CF6EE1EEF1D9F008980AD = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A13CF6C91EEF1D9E008980AD /* Build configuration list for PBXProject "Convo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A13CF6C51EEF1D9E008980AD;
+			productRefGroup = A13CF6CF1EEF1D9E008980AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A13CF6CD1EEF1D9E008980AD /* Convo */,
+				A13CF6DF1EEF1D9F008980AD /* Convo WatchKit App */,
+				A13CF6EE1EEF1D9F008980AD /* Convo WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A13CF6CC1EEF1D9E008980AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A13CF6DC1EEF1D9E008980AD /* LaunchScreen.storyboard in Resources */,
+				A13CF6D91EEF1D9E008980AD /* Assets.xcassets in Resources */,
+				A13CF6D71EEF1D9E008980AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A13CF6DE1EEF1D9F008980AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A13CF6E91EEF1D9F008980AD /* Assets.xcassets in Resources */,
+				A13CF6E71EEF1D9F008980AD /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A13CF6ED1EEF1D9F008980AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A13CF6FD1EEF1D9F008980AD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A13CF6CA1EEF1D9E008980AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A13CF6D41EEF1D9E008980AD /* ViewController.swift in Sources */,
+				A13CF6D21EEF1D9E008980AD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A13CF6EB1EEF1D9F008980AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A13CF6FB1EEF1D9F008980AD /* NotificationController.swift in Sources */,
+				A13CF6F91EEF1D9F008980AD /* ExtensionDelegate.swift in Sources */,
+				A13CF6F71EEF1D9F008980AD /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A13CF6E31EEF1D9F008980AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A13CF6DF1EEF1D9F008980AD /* Convo WatchKit App */;
+			targetProxy = A13CF6E21EEF1D9F008980AD /* PBXContainerItemProxy */;
+		};
+		A13CF6F21EEF1D9F008980AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A13CF6EE1EEF1D9F008980AD /* Convo WatchKit Extension */;
+			targetProxy = A13CF6F11EEF1D9F008980AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A13CF6D51EEF1D9E008980AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A13CF6D61EEF1D9E008980AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A13CF6DA1EEF1D9E008980AD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A13CF6DB1EEF1D9E008980AD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A13CF6E51EEF1D9F008980AD /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A13CF6E61EEF1D9F008980AD /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A13CF6FF1EEF1D9F008980AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A13CF7001EEF1D9F008980AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A13CF7021EEF1D9F008980AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Convo WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Emily-Koagedal.Convo.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		A13CF7031EEF1D9F008980AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Convo WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Emily-Koagedal.Convo.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		A13CF7061EEF1D9F008980AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = Convo_WatchKit_Extension;
+				INFOPLIST_FILE = "Convo WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Emily-Koagedal.Convo.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		A13CF7071EEF1D9F008980AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = Convo_WatchKit_Extension;
+				INFOPLIST_FILE = "Convo WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Emily-Koagedal.Convo.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		A13CF70A1EEF1D9F008980AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Convo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Emily-Koagedal.Convo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A13CF70B1EEF1D9F008980AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Convo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Emily-Koagedal.Convo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A13CF6C91EEF1D9E008980AD /* Build configuration list for PBXProject "Convo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A13CF6FF1EEF1D9F008980AD /* Debug */,
+				A13CF7001EEF1D9F008980AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A13CF7011EEF1D9F008980AD /* Build configuration list for PBXNativeTarget "Convo WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A13CF7021EEF1D9F008980AD /* Debug */,
+				A13CF7031EEF1D9F008980AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A13CF7051EEF1D9F008980AD /* Build configuration list for PBXNativeTarget "Convo WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A13CF7061EEF1D9F008980AD /* Debug */,
+				A13CF7071EEF1D9F008980AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A13CF7091EEF1D9F008980AD /* Build configuration list for PBXNativeTarget "Convo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A13CF70A1EEF1D9F008980AD /* Debug */,
+				A13CF70B1EEF1D9F008980AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A13CF6C61EEF1D9E008980AD /* Project object */;
+}

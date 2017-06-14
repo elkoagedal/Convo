@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63C94B9DC58C35E14037039A /* Pods_Convo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA5DABD714EFD858206074D /* Pods_Convo.framework */; };
+		6D10445CE89D94C39C7FD7C1 /* Pods_Convo_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C438FDC584BC23337AA063CF /* Pods_Convo_WatchKit_App.framework */; };
+		8E2ED7FFFD90855D69E62822 /* Pods_Convo_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8950BDAC5C200D74261E3D03 /* Pods_Convo_WatchKit_Extension.framework */; };
 		A13CF6D21EEF1D9E008980AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13CF6D11EEF1D9E008980AD /* AppDelegate.swift */; };
-		A13CF6D41EEF1D9E008980AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13CF6D31EEF1D9E008980AD /* ViewController.swift */; };
+		A13CF6D41EEF1D9E008980AD /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13CF6D31EEF1D9E008980AD /* CategoryViewController.swift */; };
 		A13CF6D71EEF1D9E008980AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13CF6D51EEF1D9E008980AD /* Main.storyboard */; };
 		A13CF6D91EEF1D9E008980AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A13CF6D81EEF1D9E008980AD /* Assets.xcassets */; };
 		A13CF6DC1EEF1D9E008980AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13CF6DA1EEF1D9E008980AD /* LaunchScreen.storyboard */; };
@@ -20,6 +23,13 @@
 		A13CF6F91EEF1D9F008980AD /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13CF6F81EEF1D9F008980AD /* ExtensionDelegate.swift */; };
 		A13CF6FB1EEF1D9F008980AD /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13CF6FA1EEF1D9F008980AD /* NotificationController.swift */; };
 		A13CF6FD1EEF1D9F008980AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A13CF6FC1EEF1D9F008980AD /* Assets.xcassets */; };
+		A13CF70D1EF01FE9008980AD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13CF70C1EF01FE9008980AD /* LoginViewController.swift */; };
+		A13CF70F1EF029B5008980AD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A13CF70E1EF029B5008980AD /* GoogleService-Info.plist */; };
+		A13CF7131EF07076008980AD /* PromptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13CF7121EF07076008980AD /* PromptViewController.swift */; };
+		A13CF7171EF07112008980AD /* NotesLogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13CF7161EF07112008980AD /* NotesLogTableViewController.swift */; };
+		A13CF7191EF07141008980AD /* IndividualNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13CF7181EF07141008980AD /* IndividualNoteViewController.swift */; };
+		A13CF71B1EF0715D008980AD /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13CF71A1EF0715D008980AD /* AddNoteViewController.swift */; };
+		A13CF71D1EF15DAD008980AD /* CategoryDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13CF71C1EF15DAD008980AD /* CategoryDto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,9 +75,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		196A14A773705450B609FD2F /* Pods-Convo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Convo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Convo/Pods-Convo.release.xcconfig"; sourceTree = "<group>"; };
+		30E4F5138CEDF9E95218A483 /* Pods-Convo WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Convo WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Convo WatchKit Extension/Pods-Convo WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		51DF139997716C6E76943508 /* Pods-Convo WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Convo WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Convo WatchKit Extension/Pods-Convo WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		5ED57FAF5C35AF533ED0C606 /* Pods-Convo WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Convo WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Convo WatchKit App/Pods-Convo WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		8950BDAC5C200D74261E3D03 /* Pods_Convo_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Convo_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99DBD782DB3B88075017C373 /* Pods-Convo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Convo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Convo/Pods-Convo.debug.xcconfig"; sourceTree = "<group>"; };
 		A13CF6CE1EEF1D9E008980AD /* Convo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Convo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A13CF6D11EEF1D9E008980AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A13CF6D31EEF1D9E008980AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A13CF6D31EEF1D9E008980AD /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		A13CF6D61EEF1D9E008980AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A13CF6D81EEF1D9E008980AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A13CF6DB1EEF1D9E008980AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -83,13 +99,32 @@
 		A13CF6FA1EEF1D9F008980AD /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		A13CF6FC1EEF1D9F008980AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A13CF6FE1EEF1D9F008980AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A13CF70C1EF01FE9008980AD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A13CF70E1EF029B5008980AD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A13CF7121EF07076008980AD /* PromptViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromptViewController.swift; sourceTree = "<group>"; };
+		A13CF7161EF07112008980AD /* NotesLogTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesLogTableViewController.swift; sourceTree = "<group>"; };
+		A13CF7181EF07141008980AD /* IndividualNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndividualNoteViewController.swift; sourceTree = "<group>"; };
+		A13CF71A1EF0715D008980AD /* AddNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
+		A13CF71C1EF15DAD008980AD /* CategoryDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryDto.swift; sourceTree = "<group>"; };
+		AAA5DABD714EFD858206074D /* Pods_Convo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Convo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C438FDC584BC23337AA063CF /* Pods_Convo_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Convo_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C74809DB3E9777CFA4083CC3 /* Pods-Convo WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Convo WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Convo WatchKit App/Pods-Convo WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9DF714D009182E7D4F9E5869 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D10445CE89D94C39C7FD7C1 /* Pods_Convo_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A13CF6CB1EEF1D9E008980AD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63C94B9DC58C35E14037039A /* Pods_Convo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,12 +132,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E2ED7FFFD90855D69E62822 /* Pods_Convo_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1447CC6558D7D1B2619B4031 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAA5DABD714EFD858206074D /* Pods_Convo.framework */,
+				C438FDC584BC23337AA063CF /* Pods_Convo_WatchKit_App.framework */,
+				8950BDAC5C200D74261E3D03 /* Pods_Convo_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A13CF6C51EEF1D9E008980AD = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +156,8 @@
 				A13CF6E41EEF1D9F008980AD /* Convo WatchKit App */,
 				A13CF6F31EEF1D9F008980AD /* Convo WatchKit Extension */,
 				A13CF6CF1EEF1D9E008980AD /* Products */,
+				FC84E4F613F2B1B04C9ADBF2 /* Pods */,
+				1447CC6558D7D1B2619B4031 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,11 +175,18 @@
 			isa = PBXGroup;
 			children = (
 				A13CF6D11EEF1D9E008980AD /* AppDelegate.swift */,
-				A13CF6D31EEF1D9E008980AD /* ViewController.swift */,
+				A13CF6D31EEF1D9E008980AD /* CategoryViewController.swift */,
+				A13CF70C1EF01FE9008980AD /* LoginViewController.swift */,
+				A13CF7121EF07076008980AD /* PromptViewController.swift */,
+				A13CF7161EF07112008980AD /* NotesLogTableViewController.swift */,
+				A13CF7181EF07141008980AD /* IndividualNoteViewController.swift */,
+				A13CF71A1EF0715D008980AD /* AddNoteViewController.swift */,
 				A13CF6D51EEF1D9E008980AD /* Main.storyboard */,
 				A13CF6D81EEF1D9E008980AD /* Assets.xcassets */,
 				A13CF6DA1EEF1D9E008980AD /* LaunchScreen.storyboard */,
 				A13CF6DD1EEF1D9E008980AD /* Info.plist */,
+				A13CF70E1EF029B5008980AD /* GoogleService-Info.plist */,
+				A13CF71C1EF15DAD008980AD /* CategoryDto.swift */,
 			);
 			path = Convo;
 			sourceTree = "<group>";
@@ -167,6 +222,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FC84E4F613F2B1B04C9ADBF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99DBD782DB3B88075017C373 /* Pods-Convo.debug.xcconfig */,
+				196A14A773705450B609FD2F /* Pods-Convo.release.xcconfig */,
+				C74809DB3E9777CFA4083CC3 /* Pods-Convo WatchKit App.debug.xcconfig */,
+				5ED57FAF5C35AF533ED0C606 /* Pods-Convo WatchKit App.release.xcconfig */,
+				51DF139997716C6E76943508 /* Pods-Convo WatchKit Extension.debug.xcconfig */,
+				30E4F5138CEDF9E95218A483 /* Pods-Convo WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -174,10 +242,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A13CF7091EEF1D9F008980AD /* Build configuration list for PBXNativeTarget "Convo" */;
 			buildPhases = (
+				ECEF710D71A0E6D832CA7316 /* [CP] Check Pods Manifest.lock */,
 				A13CF6CA1EEF1D9E008980AD /* Sources */,
 				A13CF6CB1EEF1D9E008980AD /* Frameworks */,
 				A13CF6CC1EEF1D9E008980AD /* Resources */,
 				A13CF7081EEF1D9F008980AD /* Embed Watch Content */,
+				28CA16F4C02FA42A2871C2BC /* [CP] Embed Pods Frameworks */,
+				95B813034DE753E08E00DA25 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,8 +264,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A13CF7051EEF1D9F008980AD /* Build configuration list for PBXNativeTarget "Convo WatchKit App" */;
 			buildPhases = (
+				DF44779CCF9B381962CC4E51 /* [CP] Check Pods Manifest.lock */,
 				A13CF6DE1EEF1D9F008980AD /* Resources */,
 				A13CF7041EEF1D9F008980AD /* Embed App Extensions */,
+				9DF714D009182E7D4F9E5869 /* Frameworks */,
+				91E6A35F22DCE4D98082102A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -210,9 +284,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A13CF7011EEF1D9F008980AD /* Build configuration list for PBXNativeTarget "Convo WatchKit Extension" */;
 			buildPhases = (
+				0FB3B75E39BE786264BEA87A /* [CP] Check Pods Manifest.lock */,
 				A13CF6EB1EEF1D9F008980AD /* Sources */,
 				A13CF6EC1EEF1D9F008980AD /* Frameworks */,
 				A13CF6ED1EEF1D9F008980AD /* Resources */,
+				4F522EBC0BDC69C5CBD06245 /* [CP] Embed Pods Frameworks */,
+				65F0375047BD1A77F70E4B8C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,6 +312,7 @@
 				TargetAttributes = {
 					A13CF6CD1EEF1D9E008980AD = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = UCW2RBA58C;
 						ProvisioningStyle = Automatic;
 					};
 					A13CF6DF1EEF1D9F008980AD = {
@@ -275,6 +353,7 @@
 				A13CF6DC1EEF1D9E008980AD /* LaunchScreen.storyboard in Resources */,
 				A13CF6D91EEF1D9E008980AD /* Assets.xcassets in Resources */,
 				A13CF6D71EEF1D9E008980AD /* Main.storyboard in Resources */,
+				A13CF70F1EF029B5008980AD /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,12 +376,141 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0FB3B75E39BE786264BEA87A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		28CA16F4C02FA42A2871C2BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Convo/Pods-Convo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F522EBC0BDC69C5CBD06245 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Convo WatchKit Extension/Pods-Convo WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65F0375047BD1A77F70E4B8C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Convo WatchKit Extension/Pods-Convo WatchKit Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91E6A35F22DCE4D98082102A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Convo WatchKit App/Pods-Convo WatchKit App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95B813034DE753E08E00DA25 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Convo/Pods-Convo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF44779CCF9B381962CC4E51 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ECEF710D71A0E6D832CA7316 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A13CF6CA1EEF1D9E008980AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A13CF6D41EEF1D9E008980AD /* ViewController.swift in Sources */,
+				A13CF71B1EF0715D008980AD /* AddNoteViewController.swift in Sources */,
+				A13CF71D1EF15DAD008980AD /* CategoryDto.swift in Sources */,
+				A13CF70D1EF01FE9008980AD /* LoginViewController.swift in Sources */,
+				A13CF7191EF07141008980AD /* IndividualNoteViewController.swift in Sources */,
+				A13CF6D41EEF1D9E008980AD /* CategoryViewController.swift in Sources */,
+				A13CF7171EF07112008980AD /* NotesLogTableViewController.swift in Sources */,
+				A13CF7131EF07076008980AD /* PromptViewController.swift in Sources */,
 				A13CF6D21EEF1D9E008980AD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,6 +665,7 @@
 		};
 		A13CF7021EEF1D9F008980AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51DF139997716C6E76943508 /* Pods-Convo WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				INFOPLIST_FILE = "Convo WatchKit Extension/Info.plist";
@@ -473,6 +682,7 @@
 		};
 		A13CF7031EEF1D9F008980AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30E4F5138CEDF9E95218A483 /* Pods-Convo WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				INFOPLIST_FILE = "Convo WatchKit Extension/Info.plist";
@@ -489,6 +699,7 @@
 		};
 		A13CF7061EEF1D9F008980AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C74809DB3E9777CFA4083CC3 /* Pods-Convo WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -506,6 +717,7 @@
 		};
 		A13CF7071EEF1D9F008980AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ED57FAF5C35AF533ED0C606 /* Pods-Convo WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -523,8 +735,10 @@
 		};
 		A13CF70A1EEF1D9F008980AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99DBD782DB3B88075017C373 /* Pods-Convo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UCW2RBA58C;
 				INFOPLIST_FILE = Convo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Emily-Koagedal.Convo";
@@ -535,8 +749,10 @@
 		};
 		A13CF70B1EEF1D9F008980AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 196A14A773705450B609FD2F /* Pods-Convo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UCW2RBA58C;
 				INFOPLIST_FILE = Convo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Emily-Koagedal.Convo";
@@ -564,6 +780,7 @@
 				A13CF7031EEF1D9F008980AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A13CF7051EEF1D9F008980AD /* Build configuration list for PBXNativeTarget "Convo WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -572,6 +789,7 @@
 				A13CF7071EEF1D9F008980AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A13CF7091EEF1D9F008980AD /* Build configuration list for PBXNativeTarget "Convo" */ = {
 			isa = XCConfigurationList;
@@ -580,6 +798,7 @@
 				A13CF70B1EEF1D9F008980AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

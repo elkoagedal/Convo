@@ -55,6 +55,12 @@
                             </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="categoriesButton" destination="y0R-wS-6LP" id="FM2-5O-zuo"/>
+                        <outlet property="favoritesButton" destination="4OM-Tt-vLy" id="3xw-c4-9oO"/>
+                        <outlet property="notesButton" destination="5bT-ih-9DR" id="YSz-OH-0Y7"/>
+                        <outlet property="quickButton" destination="3m4-Ta-WxF" id="AHj-jJ-cHD"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
@@ -138,6 +144,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="rfx-fv-VEO"/>
+        <segue reference="VxB-45-7X0"/>
     </inferredMetricsTieBreakers>
 </document>

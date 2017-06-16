@@ -18,6 +18,7 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
 
         // Do any additional setup after loading the view.
         let accessToken = AccessToken.current
+        
             //Already logged in
         
         
@@ -27,11 +28,11 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
         loginButton.center = view.center
         view.addSubview(loginButton)
         
+        
        
     }
     
-    func loginButtonDidCompleteLogin(_ loginButton: LoginButton, result: LoginResult) {
-        // Logged in
+    override func viewDidAppear(_ animated: Bool) {
         let credential = FacebookAuthProvider.credential(withAccessToken: (AccessToken.current?.authenticationToken)!)
         
         Auth.auth().signIn(with: credential) { (user, error) in
@@ -42,10 +43,26 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
             }
             // User is signed in
             // ...
+            
             let ViewController = self.storyboard?.instantiateViewController(withIdentifier: "mainView")
             self.present(ViewController!, animated: true, completion: nil)
+            
         }
-    }
+
+                /*
+        let defaults = UserDefaults(suiteName: "group.username.SuiteName")!
+       ref.observeAuthEventWithBlock { [unowned self] (authData: FAuthData!) in
+            if authData != nil {
+                defaults.setObject(authData.token, forKey: "FAuthDataToken")
+                defaults.synchronize()
+            }
+ */
+        }
+    //}
+    
+    func loginButtonDidCompleteLogin(_ loginButton: LoginButton, result: LoginResult) {
+        // Logged in
+            }
     
     func loginButtonDidLogOut(_ loginButton: LoginButton) {
         // Logged out

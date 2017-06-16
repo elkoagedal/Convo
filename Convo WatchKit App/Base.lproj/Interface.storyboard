@@ -65,10 +65,10 @@
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Prompt Interface Controller-->
         <scene sceneID="s27-hS-UHl">
             <objects>
-                <controller id="ea6-hT-Chi">
+                <controller id="ea6-hT-Chi" customClass="PromptInterfaceController" customModule="Convo_WatchKit_Extension">
                     <items>
                         <label width="136" height="103" alignment="left" text="Your Conversation Starter..." textAlignment="center" numberOfLines="0" id="ESI-hh-ekw">
                             <fontDescription key="font" style="UICTFontTextStyleBody"/>
@@ -102,10 +102,10 @@
             </objects>
             <point key="canvasLocation" x="499" y="985"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Category Interface Controller-->
         <scene sceneID="hwk-9M-1b1">
             <objects>
-                <controller id="L73-c3-yKz">
+                <controller id="L73-c3-yKz" customClass="CategoryInterfaceController" customModule="Convo_WatchKit_Extension">
                     <items>
                         <button width="1" alignment="left" title="Ice Breakers" id="XeD-Ll-MOd">
                             <color key="backgroundColor" red="0.54691760658484445" green="0.1112430902216216" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -144,6 +144,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="VxB-45-7X0"/>
+        <segue reference="rfx-fv-VEO"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -12,14 +12,30 @@ import Gloss
 class CategoryDto: Decodable {
     
     var awkwardDate: [String]?
+    var iceBreaker: [String]?
+    var interview: [String]?
+    var throwbacks: [String]?
+    var news: [String]?
     
     init() {
         self.awkwardDate = []
+        self.iceBreaker = []
+        self.interview = []
+        self.throwbacks = []
+        self.news = []
     }
     
     required init?(json: JSON) {
         self.awkwardDate = "awkwardDate" <~~ json
+        self.iceBreaker = "iceBreaker" <~~ json
+        self.news = "news" <~~ json
+        self.throwbacks = "throwbacks" <~~ json
+        self.interview = "interview" <~~ json
+
+
+
         
     }
+    
     
 }

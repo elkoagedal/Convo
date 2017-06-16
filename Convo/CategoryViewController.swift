@@ -7,9 +7,13 @@
 //
 
 import UIKit
+//import WatchConnectivity
+
 
 class CategoryViewController: UIViewController {
-
+    
+   // var wcSession: WCSession!
+    
     @IBOutlet weak var icebreakerButton: UIButton!
     @IBOutlet weak var throwbackButton: UIButton!
     @IBOutlet weak var newsButton: UIButton!
@@ -21,8 +25,12 @@ class CategoryViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-   
+        /*
+        wcSession = WCSession.default()
+        wcSession.delegate = self
+        wcSession.activate()
 
+ */
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,24 +38,15 @@ class CategoryViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func icebreakerButton(_ sender: Any) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! PromptViewController
+        vc.category = segue.identifier
     }
     
-    @IBAction func throwbackButton(_ sender: Any) {
+    
+    @IBAction func iceBreaker(_ sender: Any) {
     }
     
-    @IBAction func newsButton(_ sender: Any) {
-    }
-   
-    @IBAction func interviewButton(_ sender: Any) {
-    }
-
-    @IBAction func awkdateButton(_ sender: Any) {
-    }
-    
-    @IBAction func favoritesButton(_ sender: Any) {
-    }
-    @IBAction func randomButton(_ sender: Any) {
-    }
 }
+
 

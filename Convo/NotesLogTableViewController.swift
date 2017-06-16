@@ -15,7 +15,8 @@ class NotesLogTableViewController: UITableViewController {
     
     @IBOutlet var notesLog: UITableView!
     
-    var postData = ["Note1"]
+    var notes: [NoteDto] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,11 +25,37 @@ class NotesLogTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        tableView.delegate = self
-        tableView.dataSource = self
-        
+        Alamofire.request("https://convo-a15d7.firebaseio.com/YourNotes.json").responseJSON { response in
+            //print(response.request)  // original URL request
+            //print(response.response) // HTTP URL response
+            //print(response.data)     // server data
+            //print(response.result)   // result of response serialization
+            
+            if let JSON = response.result.value {
+                print("JSON: \(JSON)")
+                
+                let response = JSON as! NSDictionary
+                
+                for (key, value) in response {
+                    let Note = NoteDto()
+                    
+                    if let actDictionary = value as? [String : AnyObject] {
+                        Note?.title = actDictionary["title"] as! String
+                        Note?.note = actDictionary["note"] as! String
+                        
+                        
+                    }
+                    
+                    self.notes.append(Note!)
+                }
+                
+                self.tableView.reloadData()
+                
+                // Loop through activities and download images
+                
             }
-    
+        }
+    }
     func convertToDictionary(text: String) -> [String: Any]? {
         if let data = text.data(using: .utf8) {
             do {
@@ -58,7 +85,7 @@ class NotesLogTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return postData.count
+        return Int(notes.count)
     }
 
     
@@ -66,8 +93,8 @@ class NotesLogTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath)
 
         // Configure the cell...
+        cell.textLabel?.text = notes[indexPath.row].title
         
-        cell.textLabel?.text = postData[indexPath.row]
 
         return cell
     }

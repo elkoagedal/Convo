@@ -1,0 +1,6 @@
+framework module Pods_Convo_WatchKit_Extension {
+  umbrella header "Pods-Convo WatchKit Extension-umbrella.h"
+
+  export *
+  module * { export * }
+}
